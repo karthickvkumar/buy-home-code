@@ -2143,7 +2143,7 @@ Created:
   color: #666666;
 }
 .property-submit-form form .pf-title {
-  margin-bottom: 25px;
+  margin-bottom: 75px;
 }
 .property-submit-form form .pf-title input {
   padding-left: 30px;
@@ -4242,3 +4242,14 @@ li .richText-btn[data-command=toggleCode] {
   align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
+
+.mapboxgl-marker{
+  display: none;
+}
+
+.map-format{
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
