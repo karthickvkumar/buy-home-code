@@ -6,6 +6,7 @@ import AddLot from './dashboard/add-lot';
 import ListProperty from './dashboard/list-property';
 import ListLot from './dashboard/list-lot';
 import ListUser from './dashboard/list-user';
+import AddCities from './dashboard/add-cities';
 
 import 'antd/dist/antd.css';
 
@@ -19,6 +20,11 @@ class Admin extends Component {
             <div className="form-group form-padding">
               <NavLink to="/admin">
                 <input type="button" value="Add New Property" className="btn btn-primary py-3 px-5 full-width" />
+              </NavLink>
+            </div>
+            <div className="form-group form-padding">
+              <NavLink to="/admin/add-city" activeClassName="active-side-btn">
+                <input type="button" value="Add New City" className="btn btn-primary py-3 px-5 full-width" />
               </NavLink>
             </div>
             <div className="form-group form-padding">
@@ -46,6 +52,7 @@ class Admin extends Component {
           <div className="admin-content">
             <Switch>
               <Route path="/admin" exact component={AddProperty}></Route>
+              <Route path="/admin/add-city" exact component={AddCities}></Route>
               <Route path="/admin/add-lot" component={AddLot}></Route>
               <Route path="/admin/property" component={ListProperty}></Route>
               <Route path="/admin/lot" component={ListLot}></Route>
